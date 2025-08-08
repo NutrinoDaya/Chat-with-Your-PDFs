@@ -1,0 +1,242 @@
+/* Container adjustments */
+#root {
+  max-width: 720px;
+  margin: 3rem auto;
+  padding: 2.5rem 2rem 3rem;
+  text-align: left;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(50, 50, 93, 0.1), 0 6px 15px rgba(0, 0, 0, 0.07);
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #373a63;
+  font-weight: 800;
+  font-size: 2.5rem;
+  letter-spacing: 1.5px;
+  user-select: none;
+}
+
+/* FileUploader */
+.file-uploader {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.file-uploader input[type="file"] {
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  border: 1.8px solid #cbd5e1;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 100%;
+  max-width: 420px;
+  background: #fafbfc;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.file-uploader input[type="file"]:focus {
+  outline: none;
+  border-color: #5c6ac4;
+  box-shadow: 0 0 10px #5c6ac488;
+}
+
+.file-uploader button {
+  background-color: #5c6ac4;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.9rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.15s ease;
+  min-width: 180px;
+  box-shadow: 0 4px 15px rgba(92, 106, 196, 0.4);
+  user-select: none;
+}
+
+.file-uploader button:disabled {
+  background-color: #a3a3f7;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.file-uploader button:hover:not(:disabled) {
+  background-color: #4a56cc;
+  transform: translateY(-2px);
+}
+
+.error-text {
+  color: #e94f37;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  user-select: none;
+}
+
+/* ChatBox */
+.chatbox-container {
+  display: flex;
+  flex-direction: column;
+  height: 650px;
+  border: 1.5px solid #d7dbe8;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(92, 106, 196, 0.12);
+  padding: 1.5rem 2rem;
+  font-size: 1.05rem;
+  user-select: text;
+}
+
+/* Messages area */
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid #e8ebf9;
+  color: #44475a;
+  scrollbar-width: thin;
+  scrollbar-color: #5c6ac4 #f0f1f7;
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar for WebKit */
+.messages::-webkit-scrollbar {
+  width: 8px;
+}
+
+.messages::-webkit-scrollbar-track {
+  background: #f0f1f7;
+  border-radius: 10px;
+}
+
+.messages::-webkit-scrollbar-thumb {
+  background-color: #5c6ac4cc;
+  border-radius: 10px;
+  border: 2px solid #f0f1f7;
+}
+
+/* Placeholder message */
+.messages p {
+  text-align: center;
+  color: #a3a3c2;
+  margin-top: 4rem;
+  font-style: italic;
+  user-select: none;
+}
+
+/* Textarea input */
+textarea {
+  resize: none;
+  font-family: inherit;
+  font-size: 1.15rem;
+  padding: 1rem 1.25rem;
+  border-radius: 16px;
+  border: 2px solid #ccd3eb;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 100px;
+  background-color: #fbfcff;
+  color: #23242a;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: inset 0 3px 8px rgba(92, 106, 196, 0.07);
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #5c6ac4;
+  box-shadow: 0 0 14px #5c6ac4aa;
+}
+
+textarea:disabled {
+  background: #f6f7fc;
+  cursor: not-allowed;
+}
+
+/* Send button */
+button {
+  background-color: #5c6ac4;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 1rem;
+  align-self: flex-end;
+  min-width: 150px;
+  transition: background-color 0.3s ease, transform 0.15s ease;
+  box-shadow: 0 6px 20px rgba(92, 106, 196, 0.5);
+  user-select: none;
+}
+
+button:disabled {
+  background-color: #c4c9f9;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+button:hover:not(:disabled) {
+  background-color: #3f4bb7;
+  transform: translateY(-3px);
+}
+
+/* Error text in chat */
+.error-text {
+  color: #e94f37;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  text-align: center;
+  user-select: none;
+}
+
+/* Message bubbles */
+.message {
+  max-width: 75%;
+  margin-bottom: 1.25rem;
+  padding: 1rem 1.8rem;
+  border-radius: 28px;
+  line-height: 1.4;
+  word-wrap: break-word;
+  font-size: 1.1rem;
+  box-shadow: 0 6px 18px rgba(92, 106, 196, 0.12);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: text;
+}
+
+.message.user {
+  align-self: flex-end;
+  background: linear-gradient(135deg, #646cff, #4a4ade);
+  color: white;
+  font-weight: 700;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 28px;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  box-shadow: 0 8px 22px rgba(100, 108, 255, 0.4);
+}
+
+.message.bot {
+  align-self: flex-start;
+  background: #f7f8ff;
+  color: #4a4a6a;
+  font-weight: 600;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 28px;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  box-shadow: 0 4px 18px rgba(74, 74, 110, 0.15);
+}

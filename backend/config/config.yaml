@@ -1,0 +1,12 @@
+use_qdrant: false
+embed_dim: 384
+vector_store_root: "vector_store_data"
+
+qdrant:
+  host: "localhost"
+  port: 6333
+
+ollama:
+  host: "localhost"
+  port: 11434
+  model: "llama3"

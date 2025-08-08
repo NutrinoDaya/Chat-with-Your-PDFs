@@ -1,0 +1,27 @@
+# Virtual environments
+venv/
+.env/
+.env.bak
+*.env
+
+# VSCode and IDEs
+.vscode/
+.idea/
+*.swp
+
+# Node modules (if frontend with JS/React/etc.)
+frontend/node_modules/
+
+# Frontend build artifacts (if using React, Vue, etc.)
+frontend/build/
+frontend/dist/
+
+# Pytest cache
+.pytest_cache/
+
+# Pycharm
+__pycache__/
+*.iml
+*.ipr
+*.iws
+.idea/
