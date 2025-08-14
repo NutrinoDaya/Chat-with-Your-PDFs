@@ -44,7 +44,7 @@ A web application to upload PDFs, embed their content into vector stores (Qdrant
 
 ### 1. Clone the repo  
 ```bash
-git clone https://github.com/yourusername/chat-with-your-pdf.git
+git clone https://github.com/NutrinoDaya/chat-with-your-pdf.git
 cd chat-with-your-pdf
 ```
 
